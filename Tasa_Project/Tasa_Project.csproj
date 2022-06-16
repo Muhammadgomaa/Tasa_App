@@ -1,0 +1,566 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9BDE559-C137-4158-A7E1-52A2269050BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tasa_Project</RootNamespace>
+    <AssemblyName>Tasa_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\OneDrive\Desktop\Tasa\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\logo2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>93B334C8FB20E761BB465D5A5113221F2DA4B68B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Tasa_Project_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\Mohamed Gomaa\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v21.2" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2" />
+    <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.Utils.v21.2" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPurchase.Designer.cs">
+      <DependentUpon>AddPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSales.Designer.cs">
+      <DependentUpon>AddSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSupplier.Designer.cs">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllCustomers.Designer.cs">
+      <DependentUpon>AllCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllProducts.Designer.cs">
+      <DependentUpon>AllProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllPurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllPurchases.Designer.cs">
+      <DependentUpon>AllPurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllSales.Designer.cs">
+      <DependentUpon>AllSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllSuppliers.Designer.cs">
+      <DependentUpon>AllSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloseShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseShift.Designer.cs">
+      <DependentUpon>CloseShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerPage.Designer.cs">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Context.cs" />
+    <Compile Include="DeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCustomer.Designer.cs">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteProduct.Designer.cs">
+      <DependentUpon>DeleteProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePurchase.Designer.cs">
+      <DependentUpon>DeletePurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteSales.Designer.cs">
+      <DependentUpon>DeleteSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteSupplier.Designer.cs">
+      <DependentUpon>DeleteSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs" />
+    <Compile Include="InvoiceDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceDetails.Designer.cs">
+      <DependentUpon>InvoiceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductPage.Designer.cs">
+      <DependentUpon>ProductPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase.cs" />
+    <Compile Include="PurchasePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchasePage.Designer.cs">
+      <DependentUpon>PurchasePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale.cs" />
+    <Compile Include="SalesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesPage.Designer.cs">
+      <DependentUpon>SalesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingPage.Designer.cs">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SupplierPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierPage.Designer.cs">
+      <DependentUpon>SupplierPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System_Date.cs" />
+    <Compile Include="UpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProduct.Designer.cs">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePurchase.Designer.cs">
+      <DependentUpon>UpdatePurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSupplier.Designer.cs">
+      <DependentUpon>UpdateSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPurchase.resx">
+      <DependentUpon>AddPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSales.resx">
+      <DependentUpon>AddSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSupplier.resx">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllCustomers.resx">
+      <DependentUpon>AllCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllProducts.resx">
+      <DependentUpon>AllProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPurchases.resx">
+      <DependentUpon>AllPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllSales.resx">
+      <DependentUpon>AllSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllSuppliers.resx">
+      <DependentUpon>AllSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseShift.resx">
+      <DependentUpon>CloseShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerPage.resx">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCustomer.resx">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProduct.resx">
+      <DependentUpon>DeleteProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePurchase.resx">
+      <DependentUpon>DeletePurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteSales.resx">
+      <DependentUpon>DeleteSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteSupplier.resx">
+      <DependentUpon>DeleteSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceDetails.resx">
+      <DependentUpon>InvoiceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductPage.resx">
+      <DependentUpon>ProductPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PurchasePage.resx">
+      <DependentUpon>PurchasePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesPage.resx">
+      <DependentUpon>SalesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingPage.resx">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierPage.resx">
+      <DependentUpon>SupplierPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProduct.resx">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePurchase.resx">
+      <DependentUpon>UpdatePurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSupplier.resx">
+      <DependentUpon>UpdateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Tasa_Project_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addcus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addpurch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addsales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addsupp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adduser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allcus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allpurch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allsales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allsupp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allusers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changepassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dailysalesreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletecus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletepurch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletesales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletesupp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasereport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesinvoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplierproducts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplierreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updatecus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updatepurch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updatesupp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeshift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

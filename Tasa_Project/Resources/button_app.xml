@@ -1,0 +1,50 @@
+﻿<XtraSerializer version="1.0" application="Appearances">
+  <property name="AppearanceDisabled" iskey="true" value="AppearanceDisabled">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+    </property>
+    <property name="ForeColor">228, 202, 127</property>
+    <property name="BorderColor">228, 202, 127</property>
+    <property name="BackColor">228, 202, 127</property>
+    <property name="BackColor2">228, 202, 127</property>
+  </property>
+  <property name="AppearancePressed" iskey="true" value="AppearancePressed">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+      <property name="UseFont">true</property>
+    </property>
+    <property name="ForeColor">228, 202, 127</property>
+    <property name="BorderColor">228, 202, 127</property>
+    <property name="BackColor">228, 202, 127</property>
+    <property name="BackColor2">228, 202, 127</property>
+    <property name="Font">Comic Sans MS, 15.75pt</property>
+  </property>
+  <property name="Appearance" iskey="true" value="Appearance">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+      <property name="UseFont">true</property>
+    </property>
+    <property name="ForeColor">228, 202, 127</property>
+    <property name="BorderColor">228, 202, 127</property>
+    <property name="BackColor">228, 202, 127</property>
+    <property name="BackColor2">228, 202, 127</property>
+    <property name="Font">Comic Sans MS, 15.75pt</property>
+  </property>
+  <property name="AppearanceHovered" iskey="true" value="AppearanceHovered">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+    </property>
+    <property name="ForeColor">228, 202, 127</property>
+    <property name="BorderColor">228, 202, 127</property>
+    <property name="BackColor">228, 202, 127</property>
+    <property name="BackColor2">228, 202, 127</property>
+  </property>
+</XtraSerializer>
